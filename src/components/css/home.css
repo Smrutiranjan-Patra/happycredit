@@ -1,0 +1,142 @@
+.main {
+  width: 75%;
+  margin: auto;
+}
+.upper {
+  margin-top: 50px;
+  padding: 5px;
+  text-align: left;
+}
+.upper > h1 {
+  font-size: 55px;
+}
+.lower {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+.first {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 32px;
+  padding: 5px 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.second {
+  display: flex;
+  flex-direction: column;
+}
+.search {
+  height: 70px;
+  border-bottom: 1px solid;
+}
+.type {
+  border: none;
+  padding: 5px 7px;
+  float: left;
+  margin: 30px 30px 0 17px;
+  outline: none;
+  width: 99%;
+}
+.featured {
+  height: 70px;
+}
+.featured > .btn1 {
+  float: right;
+  margin: 25px;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 21px;
+  font-size: 0.8em;
+}
+.item {
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  grid-gap: 15px;
+}
+
+.item > div {
+  height: 260px;
+}
+.backImgs {
+  background-size: cover;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 42.11%
+  );
+  border-radius: 15px;
+  font-size: xx-large;
+  color: white;
+  font-weight: bold;
+  height: 190px;
+  width: 190px;
+  opacity: 0.9;
+}
+.txt {
+  position: relative;
+  text-align: left;
+  margin-left: 10px;
+  top: 35%;
+}
+.off {
+  font-size: 50px;
+}
+.cata {
+  font-size: 1.25rem;
+}
+.cata_sub {
+  font-size: 0.9rem;
+  color: grey;
+  cursor: pointer;
+}
+
+.cata_sub:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 1400px) {
+  .lower {
+    display: block;
+  }
+  .first {
+    display: none;
+  }
+  .item {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    justify-content: center;
+    grid-gap: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .lower {
+    display: block;
+  }
+  .first {
+    display: none;
+  }
+  .item {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    justify-content: center;
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .lower {
+    display: block;
+  }
+  .first {
+    display: none;
+  }
+  .item {
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    grid-gap: 20px;
+  }
+}
